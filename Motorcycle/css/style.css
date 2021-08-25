@@ -796,6 +796,34 @@ body.ie ._ibg img {
   display: none;
 }
 
+.footer {
+  width: 100%;
+  height: 182px;
+  background-color: #cd0a2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__copyright {
+  text-align: center;
+  font-family: "lato-regular";
+  font-size: 17px;
+  line-height: 36px;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+.footer__copyright span {
+  display: inline-block;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -880,6 +908,10 @@ body.ie ._ibg img {
   width: 365px;
   margin-right: 40px;
   margin-bottom: 25px;
+}
+
+.cards__prise-title {
+  font-size: 56px;
 }
 
 .cards__text {
@@ -1062,35 +1094,6 @@ body.ie ._ibg img {
   color: #040404;
 }
 
-.description-rider__header {
-  max-width: 100%;
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: calc(20px + 100 * ((100vw - 320px) / 1380));
-}
-
-.description-rider__title {
-  font-family: "bebas-neue-bold";
-  font-size: 68.2px;
-  line-height: 1.2;
-  color: #000000;
-}
-
-.description-rider__title span {
-  color: #cd0a2d;
-}
-
-.description-rider__text {
-  max-width: 820px;
-  margin: 0 auto;
-  font-family: "lato-medium";
-  font-size: 17.8px;
-  line-height: 26px;
-  letter-spacing: 0.025em;
-  color: #5d5c5c;
-}
-
 .description-rider__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1159,6 +1162,121 @@ body.ie ._ibg img {
   max-height: calc(424px + 100 * ((100vw - 320px) / 1380));
 }
 
+.travel-blog__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+  margin-bottom: calc(40px + 40 * ((100vw - 320px) / 1380));
+  margin-top: calc(15px + 15 * ((100vw - 320px) / 1380));
+}
+
+.travel-blog__items :nth-child(3) {
+  margin: 0px 0px 0px 0px;
+}
+
+.travel-blog__item {
+  width: 365px;
+  margin-right: 40px;
+  margin-bottom: 25px;
+}
+
+.travel-blog__prise-title {
+  font-family: "bebas-neue-bold";
+  font-size: 36px;
+  line-height: 1.2;
+  color: #ffffff;
+  white-space: nowrap;
+  position: relative;
+  top: 77px;
+  left: 30px;
+  line-height: 1.2;
+}
+
+.travel-blog__text {
+  margin-top: calc(15px + 35 * ((100vw - 320px) / 1380));
+}
+
+.travel-blog__description {
+  line-height: 24px;
+  margin-bottom: calc(10px + 25 * ((100vw - 320px) / 1380));
+}
+
+.contact {
+  width: 100%;
+}
+
+._no-webp .contact__position{
+  background: url("../img/block-start/background_nature.jpg") 0 0/100% 100% no-repeat; }
+
+.contact__position {
+  position: relative;
+  width: 100%;
+  height: 432px;
+  z-index: 1;
+  bottom: calc(40px + 80 * ((100vw - 320px) / 1380));
+}
+
+.contact__block-title {
+  padding-top: calc(40px + 80 * ((100vw - 320px) / 1380));
+}
+
+.contact__title {
+  max-width: 820px;
+  margin: 0 auto;
+  font-family: "lato-medium";
+  font-size: 17.8px;
+  line-height: 26px;
+  letter-spacing: 0.025em;
+  color: #fff;
+}
+
+.contact__text {
+  color: #fefefe;
+}
+
+.contact__map-icon {
+  position: relative;
+  z-index: 2;
+  font-size: 206px;
+  top: -250px;
+  left: 45%;
+  color: #cd0a2d;
+}
+
+.header-title-global {
+  max-width: 100%;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: calc(20px + 100 * ((100vw - 320px) / 1380));
+}
+
+.header-title-global__title {
+  font-family: "bebas-neue-bold";
+  font-size: 68.2px;
+  line-height: 1.2;
+}
+
+.header-title-global__title span {
+  color: #cd0a2d;
+}
+
+.header-title-global__text {
+  max-width: 820px;
+  margin: 0 auto;
+  font-family: "lato-medium";
+  font-size: 17.8px;
+  line-height: 26px;
+  letter-spacing: 0.025em;
+  color: #5d5c5c;
+}
+
 .item {
   width: 365px;
 }
@@ -1187,7 +1305,7 @@ body.ie ._ibg img {
   top: 50px;
   left: 25px;
   font-family: "bebas-regular";
-  font-size: 56px;
+  font-size: 52px;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -1576,16 +1694,28 @@ body.ie ._ibg img {
     font-size: calc(13px + 5.8 * ((100vw - 320px) / 447.98));
   }
 
-  .description-rider__title {
-    font-size: calc(33.2px + 35 * ((100vw - 320px) / 447.98));
+  .description-rider__author-text {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 447.98));
   }
 
-  .description-rider__text {
+  .travel-blog__item {
+    margin-right: calc(0px + 40 * ((100vw - 320px) / 447.98));
+  }
+
+  .travel-blog__item {
+    margin-bottom: calc(30px + -5 * ((100vw - 320px) / 447.98));
+  }
+
+  .contact__title {
     font-size: calc(12.8px + 5 * ((100vw - 320px) / 447.98));
   }
 
-  .description-rider__author-text {
-    font-size: calc(14px + 6 * ((100vw - 320px) / 447.98));
+  .header-title-global__title {
+    font-size: calc(33.2px + 35 * ((100vw - 320px) / 447.98));
+  }
+
+  .header-title-global__text {
+    font-size: calc(12.8px + 5 * ((100vw - 320px) / 447.98));
   }
 }
 
@@ -1618,3 +1748,5 @@ body.ie ._ibg img {
     border: 1px solid rgba(255, 255, 255, 0.5);
   }
 }
+
+._webp .contact__position{ background: url(../img/block-start/background_nature.webp) 0 0/100% 100% no-repeat; }
