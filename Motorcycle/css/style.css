@@ -65,7 +65,7 @@
   font-display: block;
 }
 
-[class^="_icon-"]:before,
+[class^=_icon-]:before,
 [class*=" _icon-"]:before {
   font-family: "icons";
   font-style: normal;
@@ -77,57 +77,57 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="_icon-"]:before,
+[class^=_icon-]:before,
 [class*=" _icon-"]:before {
   display: inline-block;
 }
 
 ._icon-phone:before {
-  content: "\e900";
+  content: "";
 }
 
 ._icon-digg:before {
-  content: "\e901";
+  content: "";
 }
 
 ._icon-dollar:before {
-  content: "\e902";
+  content: "";
 }
 
 ._icon-email:before {
-  content: "\e903";
+  content: "";
 }
 
 ._icon-pied_piper:before {
-  content: "\e904";
+  content: "";
 }
 
 ._icon-adress:before {
-  content: "\e905";
+  content: "";
 }
 
 ._icon-map:before {
-  content: "\e906";
+  content: "";
 }
 
 ._icon-vk:before {
-  content: "\e908";
+  content: "";
 }
 
 ._icon-facebook:before {
-  content: "\e907";
+  content: "";
 }
 
 ._icon-google-plus:before {
-  content: "\ea8b";
+  content: "";
 }
 
 ._icon-youtube:before {
-  content: "\ea9d";
+  content: "";
 }
 
 ._icon-linkedin:before {
-  content: "\eaca";
+  content: "";
 }
 
 * {
@@ -225,7 +225,7 @@ body {
   color: #000;
   font-size: 20px;
   line-height: 150%;
-  background-color: #eeebeb;
+  background-color: #ededed;
   font-family: Arial, "lato-regular", Helvetica, sans-serif;
 }
 
@@ -838,7 +838,8 @@ body.ie ._ibg img {
 }
 
 .home {
-  position: relative;
+  background-color: #fff;
+  margin-bottom: calc(0px + 50 * ((100vw - 320px) / 1380));
 }
 
 .home__bg-img {
@@ -846,7 +847,7 @@ body.ie ._ibg img {
 }
 
 .home__bg-img img {
-  max-width: 120%;
+  width: 100vw;
 }
 
 .home__triangle {
@@ -863,7 +864,7 @@ body.ie ._ibg img {
 .home__content {
   position: relative;
   z-index: 2;
-  height: calc(155px + 570 * ((100vw - 320px) / 1380));
+  height: calc(120px + 605 * ((100vw - 320px) / 1380));
   padding-right: calc(20px + 66 * ((100vw - 320px) / 1380));
   padding-left: calc(20px + 66 * ((100vw - 320px) / 1380));
   margin-top: calc(80px + 57 * ((100vw - 320px) / 1380));
@@ -877,13 +878,22 @@ body.ie ._ibg img {
   color: #ffffff;
 }
 
+.home__moto {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin: 0px 0px 10px 0px;
+}
+
 .home__moto img {
   max-width: 90%;
 }
 
 .cards {
   max-width: 1205px;
-  padding-top: 80px;
+  padding-top: calc(10px + 70 * ((100vw - 320px) / 1380));
   margin: 0 auto;
 }
 
@@ -897,10 +907,10 @@ body.ie ._ibg img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 15px;
-  margin-bottom: calc(40px + 40 * ((100vw - 320px) / 1380));
+  margin-bottom: calc(10px + 70 * ((100vw - 320px) / 1380));
 }
 
-.cards__items :nth-child(3) {
+.cards__items :last-child {
   margin: 0px 0px 0px 0px;
 }
 
@@ -910,12 +920,12 @@ body.ie ._ibg img {
   margin-bottom: 25px;
 }
 
-.cards__prise-title {
-  font-size: 56px;
+.cards__img {
+  margin-bottom: calc(15px + 35 * ((100vw - 320px) / 1380));
 }
 
-.cards__text {
-  margin-top: calc(15px + 35 * ((100vw - 320px) / 1380));
+.cards__prise-title {
+  font-size: 56px;
 }
 
 .cards__description {
@@ -938,8 +948,8 @@ body.ie ._ibg img {
 }
 
 .cards__btn span:hover {
-  -webkit-box-shadow: 1px 1px 2px 1px #cd0a2d, -1px 1px 2px 1px #cd0a2d, 1px -1px 2px 1px #cd0a2d, -1px -1px 2px 1px #cd0a2d;
-          box-shadow: 1px 1px 2px 1px #cd0a2d, -1px 1px 2px 1px #cd0a2d, 1px -1px 2px 1px #cd0a2d, -1px -1px 2px 1px #cd0a2d;
+  -webkit-box-shadow: 1px 1px 2px 1px #cd0a2d, -1px 1px 2px 1px #cd0a2d, 1px -1px 2px 1px #cd0a2d, -1px -1px 2px 1px #cd0a2d;
+          box-shadow: 1px 1px 2px 1px #cd0a2d, -1px 1px 2px 1px #cd0a2d, 1px -1px 2px 1px #cd0a2d, -1px -1px 2px 1px #cd0a2d;
   background-color: #ad223b;
 }
 
@@ -1026,7 +1036,7 @@ body.ie ._ibg img {
 }
 
 .block-item__people-list {
-  max-width: 430px;
+  max-width: 440px;
   margin: auto;
   padding: 0px 10px 0px 10px;
   margin-bottom: calc(25px + 40 * ((100vw - 320px) / 1380));
@@ -1107,7 +1117,7 @@ body.ie ._ibg img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 13px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
 }
 
 .description-rider__coment {
@@ -1167,7 +1177,8 @@ body.ie ._ibg img {
 }
 
 .description-rider__footer {
-  margin: -136px 0px 0px 0px;
+  margin-top: calc(-20px + -100 * ((100vw - 320px) / 1380));
+  position: relative;
   height: 817px;
   background-color: rgba(26, 25, 25, 0.8);
   color: #fff;
@@ -1190,6 +1201,8 @@ body.ie ._ibg img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .description-rider__img-map {
@@ -1205,16 +1218,19 @@ body.ie ._ibg img {
 }
 
 .description-rider__title-bottom {
-  padding: 100px 0px 0px 0px;
+  padding-top: calc(20px + 80 * ((100vw - 320px) / 1380));
+  padding-bottom: calc(20px + -20 * ((100vw - 320px) / 1380));
 }
 
 .description-rider__moto {
   position: absolute;
   left: 50%;
-  bottom: -29%;
+  bottom: calc(0px + -490 * ((100vw - 320px) / 1380));
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: calc(93px + 279 * ((100vw - 320px) / 1380));
+  height: calc(172.25px + 516.75 * ((100vw - 320px) / 1380));
 }
 
 .aside-red {
@@ -1225,6 +1241,7 @@ body.ie ._ibg img {
 
 .aside {
   width: 50vw;
+  padding: 0px 5px 0px 5px;
 }
 
 .aside__block {
@@ -1244,12 +1261,12 @@ body.ie ._ibg img {
 
 .aside__title {
   font-family: "bebas-neue-bold";
-  font-size: 55.1px;
+  font-size: calc(25px + 30.1 * ((100vw - 320px) / 1380));
   line-height: 1.2;
 }
 
 .aside__title span {
-  font-size: 29.5px;
+  font-size: calc(20px + 9.5 * ((100vw - 320px) / 1380));
 }
 
 .aside__scale {
@@ -1260,7 +1277,7 @@ body.ie ._ibg img {
 
 .aside__subtitle {
   font-family: "bebas-neue-bold";
-  font-size: 28.9px;
+  font-size: calc(16px + 12.9 * ((100vw - 320px) / 1380));
 }
 
 .aside__text {
@@ -1268,7 +1285,7 @@ body.ie ._ibg img {
   max-width: 485px;
   text-align: center;
   font-family: "lato-medium";
-  font-size: 17.8px;
+  font-size: calc(14px + 3.8 * ((100vw - 320px) / 1380));
   line-height: 26px;
   letter-spacing: 0.025em;
 }
@@ -1352,8 +1369,9 @@ body.ie ._ibg img {
 
 .contact__text {
   max-width: 815px;
-  margin: 0 auto;
+  margin: 10px auto;
   color: #fefefe;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1380));
 }
 
 .contact__map-icon {
@@ -1371,7 +1389,9 @@ body.ie ._ibg img {
 
 .contact__contacts {
   max-width: 1150px;
-  margin: -20px auto 0px auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: calc(20px + -40 * ((100vw - 320px) / 1380));
   padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1397,7 +1417,7 @@ body.ie ._ibg img {
 }
 
 .contact__icon {
-  font-size: 60px;
+  font-size: calc(30px + 30 * ((100vw - 320px) / 1380));
 }
 
 .contact__description {
@@ -1423,7 +1443,10 @@ body.ie ._ibg img {
 }
 
 .contact__block {
-  margin: 60px 10px 75px 10px;
+  margin-top: calc(10px + 50 * ((100vw - 320px) / 1380));
+  margin-bottom: calc(30px + 30 * ((100vw - 320px) / 1380));
+  margin-left: calc(10px + 0 * ((100vw - 320px) / 1380));
+  margin-right: calc(10px + 0 * ((100vw - 320px) / 1380));
 }
 
 .contact__list-social {
@@ -1447,14 +1470,17 @@ body.ie ._ibg img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5px 15px;
-  width: 67px;
-  height: 66px;
-  border: 3px solid #f0d839;
+  margin-right: calc(8px + 7 * ((100vw - 320px) / 1380));
+  margin-left: calc(8px + 7 * ((100vw - 320px) / 1380));
+  margin-tor: calc(2px + 3 * ((100vw - 320px) / 1380));
+  margin-bottom: calc(2px + 3 * ((100vw - 320px) / 1380));
+  height: calc(46px + 20 * ((100vw - 320px) / 1380));
+  width: calc(47px + 19 * ((100vw - 320px) / 1380));
+  border: 2px solid #f0d839;
   -webkit-box-shadow: 1px 1px 3px #b8aa52;
           box-shadow: 1px 1px 3px #b8aa52;
   border-radius: 50%;
-  font-size: 29.7px;
+  font-size: calc(20px + 9.7 * ((100vw - 320px) / 1380));
   line-height: 1.2;
   letter-spacing: 0.025em;
   color: #353535;
@@ -1508,8 +1534,6 @@ body.ie ._ibg img {
 
 .img {
   position: relative;
-  width: calc(310px + 55 * ((100vw - 320px) / 1380));
-  height: calc(300px + 50 * ((100vw - 320px) / 1380));
 }
 
 .triangle-country {
@@ -1597,6 +1621,18 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 1400px) {
+  .description-rider__moto {
+    display: none;
+  }
+
+  .aside__block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 @media (max-width: 1312px) {
   ._container {
     max-width: 970px;
@@ -1611,6 +1647,11 @@ body.ie ._ibg img {
   .about-us__motorcycle {
     display: none;
   }
+}
+
+@media (max-width: 1024px) {
+  ._no-webp .contact__position{
+    background: url("../img/block-start/contact-mob.jpg") 0 0/100% 100% no-repeat; }
 }
 
 @media (max-width: 991.98px) {
@@ -1693,6 +1734,34 @@ body.ie ._ibg img {
   .about-us__item-block {
     width: 100%;
     top: 0px;
+  }
+}
+
+@media (max-width: 840px) {
+  .description-rider__row {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .aside-red {
+    height: auto;
+  }
+
+  .aside {
+    width: 100%;
+    margin: 0px 2px 0px 2px;
+  }
+
+  .aside__block {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 25px 0px 0px 0px;
+    margin: 0px 15px 0px 15px;
+  }
+
+  .aside__text {
+    margin: 30px auto;
   }
 }
 
@@ -1982,6 +2051,33 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 425px) {
+  ._no-webp .contact__position{
+    background: url("../img/block-start/contact-mob-320.jpg") 0 0/100% 100% no-repeat; }
+}
+
+@media (max-width: 400px) {
+  .cards {
+    margin: 0;
+  }
+
+  .cards__items {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -100px;
+    -webkit-transform: scale(0.81);
+        -ms-transform: scale(0.81);
+            transform: scale(0.81);
+  }
+
+  .travel-blog__items {
+    margin: -100px 0px 0px 0px;
+    -webkit-transform: scale(0.81);
+        -ms-transform: scale(0.81);
+            transform: scale(0.81);
+  }
+}
+
 @media (max-width: 360px) {
   .socials {
     margin: -1px 39px 0px 39px;
@@ -1997,3 +2093,13 @@ body.ie ._ibg img {
 }
 
 ._webp .contact__position{ background: url(../img/block-start/background_nature.webp) 0 0/100% 100% no-repeat; }
+
+@media (max-width: 1024px){
+
+  ._webp .contact__position{ background: url(../img/block-start/contact-mob.webp) 0 0/100% 100% no-repeat; }
+}
+
+@media (max-width: 425px){
+
+  ._webp .contact__position{ background: url(../img/block-start/contact-mob-320.webp) 0 0/100% 100% no-repeat; }
+}
